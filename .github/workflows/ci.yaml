@@ -76,11 +76,7 @@ jobs:
         run: |
           cd gitops
           sed -i "s|value: ghcr.io/igfurlan/backstage:sha-.*|value: ghcr.io/igfurlan/backstage:sha-${{ steps.sha.outputs.short }}|" overlays/production/patches/resources.yaml
-<<<<<<< Updated upstream
-          cat overlays/production/patches/image.yaml
-=======
           cat overlays/production/patches/resources.yaml
->>>>>>> Stashed changes
 
       - name: Commit and push
         run: |
