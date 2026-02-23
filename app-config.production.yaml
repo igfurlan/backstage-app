@@ -18,8 +18,10 @@ backend:
       password: ${POSTGRES_PASSWORD}
 
 auth:
+  environment: development
   providers:
-    guest: {}
+    guest:
+      dangerouslyAllowOutsideDevelopment: true
 
 catalog:
   locations:
