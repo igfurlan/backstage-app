@@ -1,5 +1,9 @@
 app:
   baseUrl: https://backstage.kubefurlan.com
+  title: Kube Furlan IDP
+
+organization:
+  name: Kube Furlan
 
 backend:
   baseUrl: https://backstage.kubefurlan.com
