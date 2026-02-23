@@ -75,8 +75,8 @@ jobs:
       - name: Update image tag
         run: |
           cd gitops
-          sed -i "s|newTag: sha-.*|newTag: sha-${{ steps.sha.outputs.short }}|" overlays/production/kustomization.yaml
-          cat overlays/production/kustomization.yaml
+          sed -i "s|image: ghcr.io/igfurlan/backstage:sha-.*|image: ghcr.io/igfurlan/backstage:sha-${{ steps.sha.outputs.short }}|" overlays/production/patches/image.yaml
+          cat overlays/production/patches/image.yaml
 
       - name: Commit and push
         run: |
