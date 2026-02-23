@@ -6,6 +6,9 @@ backend:
   listen: ':7007'
   cors:
     origin: https://backstage.kubefurlan.com
+  auth:
+    keys:
+      - secret: ${BACKEND_SECRET}
   database:
     client: pg
     connection:
