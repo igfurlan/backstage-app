@@ -7,8 +7,7 @@ organization:
 
 backend:
   baseUrl: https://backstage.kubefurlan.com
-  #listen: ':7007'
-  listen: ':9999'
+  listen: ':7007'
   cors:
     origin: https://backstage.kubefurlan.com
   auth:
