@@ -39,4 +39,4 @@ catalog:
       target: ./examples/org.yaml
       rules:
         - allow: [User, Group]
-# canary test Tue Feb 24 08:55:06 AM CET 2026
+# canary test Tue Feb 24 09:37:37 AM CET 2026
